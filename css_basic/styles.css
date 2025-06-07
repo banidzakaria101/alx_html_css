@@ -39,3 +39,15 @@ a {
   color: #00f;
   text-decoration: underline;
 }
+
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+
+  article,
+  aside {
+    flex: unset;
+    width: 100%;
+  }
+}
