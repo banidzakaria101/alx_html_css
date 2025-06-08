@@ -128,3 +128,42 @@ nav ul li a {
   margin: 5px 0 0;
   font-weight: 400;
 }
+
+.testimonial-section {
+  background-color: #c271ff;
+  display: flex;
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.testimonial-container {
+  max-width: 800px;
+  margin-left: 10%;
+  align-items: center;
+}
+
+.testimonial-container img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.testimonial-content blockquote {
+  font-size: 16px;
+  font-style: italic;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.testimonial-content h3 {
+  font-size: 16px;
+  margin: 0;
+  font-weight: bold;
+}
+
+.testimonial-content p {
+  font-size: 14px;
+  font-style: italic;
+}
