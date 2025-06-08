@@ -167,3 +167,89 @@ nav ul li a {
   font-size: 14px;
   font-style: italic;
 }
+
+.popular-section {
+  padding: 60px 20px;
+  background-color: white;
+  text-align: center;
+  color: #071629;
+}
+
+.popular-section h2 {
+ font-size: 28px;
+  font-weight: 400;
+  margin-bottom: 40px;
+  margin-top: 0;
+}
+
+.purple-text {
+  color: #c271ff;
+  font-weight: 700;
+}
+
+.tutorials-grid {
+  display: flex;
+  gap: 30px;
+  margin: auto;
+  width: 80%;
+  padding: 10px;
+  
+}
+
+.tutorial-card {
+  width: 220px;
+  text-align: left;
+  
+}
+
+.tutorial-card img {
+  width: 100%;
+  border-radius: 4px;
+  
+}
+
+.tutorial-card h3 {
+  font-size: 16px;
+  margin: 10px 0 5px;
+}
+
+.tutorial-card p {
+  font-size: 14px;
+  color: #666;
+ 
+}
+
+.tutor-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.tutor-info img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  
+}
+
+.tutor-info h4 {
+  font-size: 14px;
+  color: #c271ff;
+  margin: 0;
+}
+
+.stars {
+    display: flex;
+  color: #c271ff;
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.duration {
+  font-size: 13px;
+  color: #888;
+}
+
+
+
