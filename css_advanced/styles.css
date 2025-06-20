@@ -129,6 +129,12 @@ nav ul li a {
   font-weight: 400;
 }
 
+.smile-section :hover{
+    transform: scale(1.2);
+    cursor: pointer;
+  transition: transform 0.3s;
+}
+
 .testimonial-section {
   background-color: #c271ff;
   display: flex;
@@ -249,6 +255,12 @@ nav ul li a {
 .duration {
   font-size: 13px;
   color: #888;
+}
+
+.tutorial-card :hover{
+    transform: scale(1.1);
+    cursor: pointer;
+  transition: transform 0.3s;
 }
 
 
