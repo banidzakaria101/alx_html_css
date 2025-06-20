@@ -1,0 +1,262 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary: #FF6565;
+  --font: Arial, sans-serif;
+  --max-width: 1000px;
+}
+
+/* Body defaults */
+body {
+  font-family: var(--font);
+  color: #000000;
+  font-size: 14px; 
+}
+
+/* Container layout */
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Hero section */
+.hero {
+  background-image: url("assets/headphones_hero_1.jpg");
+  background-size: 100%;
+  background-size: cover;
+  position: relative;
+  color: white;
+  align-items: center;
+  text-align: center;
+}
+
+.logo {
+    width: 18%;
+}
+
+.hero__overlay {
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem 0;
+}
+
+/* Nav */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__menu {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.nav__menu a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.nav__menu a:hover,
+.nav__menu a:active {
+  color: var(--primary);
+}
+
+/* Hero content */
+.hero__content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3rem;
+}
+
+.hero__content h1 {
+  font-size: 2rem;
+  margin-top: 14rem;
+  margin-bottom: 1rem;
+  max-width: 700px;
+}
+
+.hero__content p {
+  max-width: 700px;
+  margin-bottom: 1.5rem;
+}
+
+.hero__btn {
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  padding: 0.75rem 2rem;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.hero__btn:hover,
+.hero__btn:active {
+  opacity: 0.9;
+}
+
+.hero__description {
+  max-width: 700px;
+  margin-top: 2.5rem;
+  font-size: 0.90rem;
+  line-height: 1.6;
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .hero {
+    background-position: center;
+    height: auto;
+    padding: 2rem 0;
+  }
+
+  .nav__menu {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .hero__content h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero__description {
+    font-size: 0.875rem;
+  }
+}
+
+.what-we-do {
+  text-align: center;
+  padding: 4rem 1rem;
+  color:#000;
+}
+
+.what-we-do h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.what-we-do p {
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  line-height: 1.5;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.feature {
+  flex: 1 1 200px;
+  max-width: 220px;
+  text-align: center;
+}
+
+.feature span {
+  font-size: 3rem;
+  color: var(--primary);
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.feature h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.feature p {
+  font-size: 0.95rem;
+  color: #ccc;
+}
+
+/* Mobile tweak */
+@media (max-width: 480px) {
+  .features {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Our Results Section */
+.results {
+    background-image: url("assets/headphones_hero_2.jpg");
+  color: white;
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.results h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.results__description {
+  max-width: 700px;
+  margin: 0 auto 3rem;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #ccc;
+}
+
+.results__cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.result-card {
+  background-color: #FF6565;
+  color: white;
+  width: 120px;
+  height: 120px;
+  clip-path: polygon(50% 0%, 100% 38%, 81% 100%, 19% 100%, 0% 38%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+}
+
+.result-card p{
+    font-weight: 100;
+    font-size: 0.6rem;
+    margin-top: 0.5rem;
+}
+
+.result-card:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive Cards */
+@media (max-width: 480px) {
+  .results__cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .result-card {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 1rem;
+  }
+}
